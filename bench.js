@@ -29,6 +29,17 @@ suite.add('ktpl', function () {
       }
     })
   })
+
+  .add('es6-template', function () {
+    var template = require('art-template')
+    var name =  'i5ting'
+    var age =  29
+    var user = {
+      name: 'xxxx'
+    }
+    var source = `<p>Hello, my name is ${user.name}. I\'m ${age} years old.</p>`
+ 
+  })
   // add listeners
   .on('cycle', function (event) {
     console.log(String(event.target))
