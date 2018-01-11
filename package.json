@@ -1,6 +1,6 @@
 {
   "name": "ktpl",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "simple template",
   "main": "index.js",
   "scripts": {
