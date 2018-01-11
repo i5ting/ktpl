@@ -1,4 +1,3 @@
-const fs = require('fs')
 const reExp = /(^( )?(var|if|for|else|switch|case|break|{|}|;))(.*)?/g
 
 function template(tpl, options) {
@@ -36,6 +35,7 @@ function template(tpl, options) {
 
 template.render = function (file, options) {
   try {
+    const fs = require('fs')
     var tpl = fs.readFileSync(file).toString()
     return template(tpl, options)
   } catch (err) {
