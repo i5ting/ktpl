@@ -92,6 +92,16 @@ var html = tpl.render('./tpl3.html', {
 })
 ```
 
+于是模板写法就更像jsp了
+
+```html
+<p>Hello, my name is <% user.name %>. I\'m <% age%> years old.</p>
+
+<% if(user) { %>
+    <p>this is a if directive</p>
+<% } %>
+```
+
 ## Contributing
 
 1. Fork it
